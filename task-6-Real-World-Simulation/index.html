@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Landing Page Clone</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+
+      header {
+        background: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 50px;
+        background: lightblue;
+      }
+
+      button {
+        padding: 10px 20px;
+        background: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .products {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+      }
+
+      .card {
+        border: 1px solid gray;
+        padding: 15px;
+        width: 150px;
+        text-align: center;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        .products {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>My Company</h1>
+    </header>
+
+    <div class="hero">
+      <h2>Welcome to Our Website</h2>
+      <p>We provide best services</p>
+      <button onclick="showMessage()">Click Me</button>
+    </div>
+
+    <div class="products">
+      <div class="card">
+        <h3>Product 1</h3>
+        <p>Price: ₹100</p>
+      </div>
+      <div class="card">
+        <h3>Product 2</h3>
+        <p>Price: ₹200</p>
+      </div>
+      <div class="card">
+        <h3>Product 3</h3>
+        <p>Price: ₹300</p>
+      </div>
+    </div>
+
+    <script>
+      function showMessage() {
+        alert("Welcome to our website!");
+      }
+    </script>
+  </body>
+</html>
