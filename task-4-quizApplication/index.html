@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Quiz App</title>
+  </head>
+  <body>
+    <h2 id="question">Question here</h2>
+
+    <input type="radio" name="answer" value="0" /> <span id="opt0"></span><br />
+    <input type="radio" name="answer" value="1" /> <span id="opt1"></span><br />
+    <input type="radio" name="answer" value="2" /> <span id="opt2"></span><br />
+    <input type="radio" name="answer" value="3" /> <span id="opt3"></span
+    ><br /><br />
+
+    <button onclick="nextQuestion()">Next</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+      const quiz = [
+        {
+          q: "What is HTML?",
+          options: [
+            "Programming Language",
+            "Markup Language",
+            "Database",
+            "Operating System",
+          ],
+          answer: 1,
+        },
+        {
+          q: "Which is used for styling?",
+          options: ["HTML", "Java", "CSS", "Python"],
+          answer: 2,
+        },
+        {
+          q: "JavaScript is used for?",
+          options: ["Structure", "Styling", "Interactivity", "Database"],
+          answer: 2,
+        },
+      ];
+
+      let index = 0;
+      let score = 0;
+
+      function loadQuestion() {
+        document.getElementById("question").innerText = quiz[index].q;
+
+        for (let i = 0; i < 4; i++) {
+          document.getElementById("opt" + i).innerText = quiz[index].options[i];
+        }
+
+        // clear selection
+        let radios = document.getElementsByName("answer");
+        radios.forEach((r) => (r.checked = false));
+      }
+
+      function nextQuestion() {
+        let radios = document.getElementsByName("answer");
+        let selected = -1;
+
+        for (let i = 0; i < radios.length; i++) {
+          if (radios[i].checked) {
+            selected = i;
+          }
+        }
+
+        // validation
+        if (selected === -1) {
+          alert("Please select an answer!");
+          return;
+        }
+
+        if (selected === quiz[index].answer) {
+          score++;
+        }
+
+        index++;
+
+        if (index < quiz.length) {
+          loadQuestion();
+        } else {
+          document.body.innerHTML =
+            "<h2>Your Score: " + score + "/" + quiz.length + "</h2>";
+        }
+      }
+
+      loadQuestion();
+    </script>
+  </body>
+</html>
