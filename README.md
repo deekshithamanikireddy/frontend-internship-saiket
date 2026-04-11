@@ -1,37 +1,44 @@
-Task 1 – Personal Blog Page
+# Saiket Systems Internship 🚀
 
-Project Title
+This repository contains all the tasks completed during my internship at Saiket Systems.
 
-My Journey in Learning Web Development
+## 👩‍💻 About Me
+Hi, I'm Deekshita Manikireddy, a B.Sc Computer Science student passionate about Web Development.
 
-Description
+## 📂 Tasks Completed
 
-This project is a simple personal blog page created using HTML.
-In this page I explained my journey of learning web development and my interest in front-end development.
+### 🔹 Task 1: Basic Blog Layout
+- Created a blog post using semantic HTML
+- Included title, author, date, image, and content sections
 
-Features
+### 🔹 Task 2: Product Card
+- Designed a product card using HTML & CSS
+- Added hover effects and styling
 
-- Personal blog layout
-- Images related to web development
-- Sections explaining my learning journey
-- List of steps in learning web development
-- Simple and clean HTML structure
+### 🔹 Task 3: Responsive Webpage
+- Built a responsive layout with header, sidebar, content, and footer
+- Used media queries for mobile and desktop view
 
-Technologies Used
+### 🔹 Task 4: Quiz Application
+- Developed a quiz app using JavaScript
+- Added validation and score tracking
 
+### 🔹 Task 5: To-Do List App
+- Created a task manager app
+- Features: add, edit, delete, mark complete
+
+### 🔹 Task 6: Landing Page Clone
+- Cloned a simple webpage layout
+- Added basic JavaScript interactivity
+
+## 🛠️ Technologies Used
 - HTML
+- CSS
+- JavaScript
 
-Sections Included
+## 📌 Conclusion
+This internship helped me improve my frontend development skills and build real-world projects.
 
-1. My Web Development Journey
-2. Importance of Technology
-3. My Interest in Front-End Development
-4. My Learning Steps in Web Development
+---
 
-Author
-
-Deekshitha Manikireddy
-
-Internship
-
-Front-End Development Internship – Saiket Systems
+✨ Thank you for visiting my repository!
