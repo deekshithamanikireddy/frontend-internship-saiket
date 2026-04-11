@@ -1,0 +1,129 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(255, 153, 0, 0.97);
+  padding-bottom: 11%;
+  padding-top: 4%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-size: 200%;
+}
+
+#sidebar {
+  text-align: right;
+  font-size: 200%;
+  word-spacing: 10px;
+}
+
+#about {
+  padding-right: 2%;
+}
+
+div {
+  display: flex;
+  background-color: white;
+  padding-bottom: 10%;
+}
+
+#skills {
+  padding-left: 15%;
+}
+
+ul {
+  font-size: 2em;
+}
+
+#contact {
+  padding-left: 7%;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+/* 📱 Mobile */
+@media screen and (max-width: 450px) {
+  div {
+    flex-direction: column;
+    padding: 5%;
+  }
+  #sidebar {
+    text-align: center;
+    font-size: 180%;
+  }
+
+  h1 {
+    font-size: 180%;
+  }
+
+  h2 {
+    font-size: 140%;
+  }
+
+  p {
+    font-size: 110%;
+  }
+
+  ul {
+    font-size: 120%;
+  }
+
+  #skills,
+  #contact,
+  #about {
+    padding: 0;
+  }
+}
+
+/* 💻 Laptop */
+@media screen and (min-width: 451px) and (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 200%;
+  }
+}
+
+/* 🖥 Desktop */
+@media screen and (min-width: 701px) {
+  div {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  #sidebar {
+    font-size: 150%;
+    text-align: right;
+  }
+}
